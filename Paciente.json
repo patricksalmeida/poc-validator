@@ -1,0 +1,31 @@
+{
+  "name": "paciente",
+  "type": "record",
+  "fields": [
+    {
+      "name": "DATAOPERA_COPY",
+      "type": {
+        "name": "Paciente",
+        "type": "record",
+        "fields": [
+          {
+            "name": "key", 
+            "type": "string"
+          },
+          {
+            "name": "type", 
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": {
+              "name": "PacienteValue",
+              "type": "record",
+              "fields": []
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
